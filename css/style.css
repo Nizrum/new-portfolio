@@ -281,6 +281,37 @@ body {
   display: flex;
 }
 
+.toolkit {
+  padding: 150px 0;
+}
+
+.toolkit__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #49D6BC;
+  margin-bottom: 100px;
+}
+
+.toolkit__technologies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technology__image {
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.technology__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
 .d-none {
   display: none;
 }
