@@ -312,6 +312,75 @@ body {
   text-align: center;
 }
 
+.contact {
+  padding: 150px 0;
+  background-color: #e7fffb;
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #49D6BC;
+  margin-bottom: 100px;
+}
+
+.contact__links {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contact__link img {
+  width: 50px;
+}
+
+.contact__form {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 16px 25px;
+  background: #FFFFFF;
+  border: 2px solid #49D6BC;
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.contact__input_textarea {
+  height: 300px;
+  resize: none;
+}
+
+.contact__button {
+  padding: 16px 25px;
+  background-color: #49d6bc;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .d-none {
   display: none;
 }
