@@ -166,9 +166,21 @@ body {
   border-radius: 5px;
 }
 
+.menu__button:focus {
+  outline: 2px solid #49D6BC;
+}
+
+.menu__button:hover path {
+  stroke: #3db8a2;
+}
+
 .menu__icon {
   width: 50px;
   height: 40px;
+}
+
+.menu__icon path {
+  transition: all 0.2s;
 }
 
 .menu__list {
@@ -231,14 +243,28 @@ body {
 
 .slider__button {
   background-color: transparent;
+  border-radius: 5px;
+  outline-offset: 2px;
 }
 
-.slider__button_next img {
+.slider__button_next svg {
   transform: rotate(180deg);
 }
 
-.slider__button img {
+.slider__button svg {
   width: 50px;
+}
+
+.slider__button path {
+  transition: all 0.2s;
+}
+
+.slider__button:focus {
+  outline: 2px solid #49D6BC;
+}
+
+.slider__button:hover path {
+  fill: #3db8a2;
 }
 
 .slide {
@@ -246,6 +272,15 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   width: 950px;
+}
+
+.slide__image-wrapper {
+  border-radius: 20px;
+  outline-offset: 2px;
+}
+
+.slide__image-wrapper:focus {
+  outline: 2px solid #49D6BC;
 }
 
 .slide__image {
@@ -275,6 +310,13 @@ body {
   line-height: 28px;
   text-decoration-line: underline;
   color: #222;
+  outline-offset: 2px;
+  border-radius: 5px;
+}
+
+.slide__link:focus {
+  outline: 2px solid #49D6BC;
+  text-decoration: none;
 }
 
 .slide_visible {
@@ -340,8 +382,25 @@ body {
   margin-bottom: 50px;
 }
 
-.contact__link img {
+.contact__link {
+  border-radius: 50%;
+  outline-offset: 2px;
+}
+
+.contact__link svg {
   width: 50px;
+}
+
+.contact__link path {
+  transition: all 0.2s;
+}
+
+.contact__link:focus {
+  outline: 2px solid #49D6BC;
+}
+
+.contact__link:hover path {
+  fill: #3db8a2;
 }
 
 .contact__form {
@@ -362,6 +421,10 @@ body {
   margin-bottom: 30px;
 }
 
+.contact__input:focus {
+  outline: 1px solid #49D6BC;
+}
+
 .contact__input_textarea {
   height: 300px;
   resize: none;
@@ -379,6 +442,16 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+  outline-offset: 2px;
+  transition: all 0.2s;
+}
+
+.contact__button:focus {
+  outline: 2px solid #49D6BC;
+}
+
+.contact__button:hover {
+  background-color: #3db8a2;
 }
 
 .d-none {

@@ -80,11 +80,25 @@ body {
         background-color: #fff;
         padding: 7px;
         border-radius: 5px;
+
+        &:focus {
+            outline: 2px solid #49D6BC;
+        }
+
+        &:hover {
+            path {
+                stroke: #3db8a2;
+            }
+        }
     }
 
     &__icon {
         width: 50px;
         height: 40px;
+        
+        path {
+            transition: all 0.2s;
+        }
     }
 
     &__list {
@@ -150,16 +164,33 @@ body {
 
     &__button {
         background-color: transparent;
+        border-radius: 5px;
+        outline-offset: 2px;
 
         &_next {
 
-            img {
+            svg {
                 transform: rotate(180deg);
             }
         }
 
-        img {
+        svg {
             width: 50px;
+        }
+
+        path {
+            transition: all 0.2s;
+        }
+
+        &:focus {
+            outline: 2px solid #49D6BC;
+        }
+
+        &:hover {
+            
+            path {
+                fill: #3db8a2;
+            }
         }
     }
 }
@@ -169,6 +200,15 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     width: 950px;
+
+    &__image-wrapper {
+        border-radius: 20px;
+        outline-offset: 2px;
+
+        &:focus {
+            outline: 2px solid #49D6BC;
+        }
+    }
 
     &__image {
         width: 450px;
@@ -197,6 +237,13 @@ body {
         line-height: 28px;
         text-decoration-line: underline;
         color: #222;
+        outline-offset: 2px;
+        border-radius: 5px;
+
+        &:focus {
+            outline: 2px solid #49D6BC;
+            text-decoration: none;
+        }
     }
 
     &_visible {
@@ -267,9 +314,26 @@ body {
     }
 
     &__link {
+        border-radius: 50%;
+        outline-offset: 2px;
 
-        img {
+        svg {
             width: 50px;
+        }
+
+        path {
+            transition: all 0.2s;
+        }
+
+        &:focus {
+            outline: 2px solid #49D6BC;
+        }
+
+        &:hover {
+
+            path {
+                fill: #3db8a2;
+            }
         }
     }
 
@@ -290,6 +354,10 @@ body {
         line-height: 28px;
         margin-bottom: 30px;
 
+        &:focus {
+            outline: 1px solid #49D6BC;
+        }
+
         &_textarea {
             height: 300px;
             resize: none;
@@ -308,6 +376,16 @@ body {
         text-transform: uppercase;
         text-align: center;
         color: #FFFFFF;
+        outline-offset: 2px;
+        transition: all 0.2s;
+
+        &:focus {
+            outline: 2px solid #49D6BC;
+        }
+
+        &:hover {
+            background-color: #3db8a2;
+        }
     }
 }
 
