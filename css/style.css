@@ -408,7 +408,7 @@ body {
 }
 
 .contact__form {
-  width: 750px;
+  width: 83%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -542,9 +542,6 @@ body {
   .contact__links {
     margin-bottom: 25px;
   }
-  .contact__form {
-    width: 600px;
-  }
   .contact__input {
     padding: 14px 20px;
     font-size: 20px;
@@ -554,5 +551,51 @@ body {
   .contact__button {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 700px;
+  }
+  .menu__button {
+    right: calc((100vw - 700px) / 2);
+  }
+  .menu__list {
+    right: calc((100vw - 700px) / 2);
+  }
+  .portfolio {
+    padding: 100px 0;
+  }
+  .portfolio__title {
+    margin-bottom: 66px;
+  }
+  .slider__button svg {
+    width: 30px;
+  }
+  .slide {
+    width: 600px;
+  }
+  .slide__image {
+    width: 250px;
+  }
+  .slide__text {
+    width: 330px;
+  }
+  .toolkit {
+    padding: 100px 0;
+  }
+  .toolkit__title {
+    margin-bottom: 66px;
+  }
+  .technology__image {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .contact {
+    padding: 100px 0;
+  }
+  .contact__title {
+    margin-bottom: 66px;
   }
 }
