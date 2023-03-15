@@ -271,6 +271,7 @@ body {
 }
 
 .technology {
+    text-align: center;
 
     &__image {
         height: 120px;
@@ -391,4 +392,138 @@ body {
 
 .d-none {
     display: none;
+}
+
+@media (max-width: 1199px) {
+
+    .container {
+        width: 900px;
+    }
+
+    .menu {
+
+        &__button {
+            right: calc((100vw - 900px) / 2);
+        }
+
+        &__list {
+            right: calc((100vw - 900px) / 2);
+        }
+    }
+
+    .hero {
+
+        &__greeting {
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        &__title {
+            width: 550px;
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+
+    .portfolio {
+        padding: 120px 0;
+
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 80px;
+        }
+    }
+
+    .slider {
+
+        &__button {
+
+            svg {
+                width: 40px;
+            }
+        }
+    }
+
+    .slide {
+        width: 760px;
+
+        &__image {
+            width: 365px;
+        }
+
+        &__text {
+            width: 365px;
+        }
+
+        &__title {
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+
+        &__description {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        &__link {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    .toolkit {
+        padding: 120px 0;
+
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 80px;
+        }
+    }
+
+    .technology {
+
+        &__image {
+            height: 100px;
+            margin-bottom: 25px;
+        }
+    
+        &__name {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    .contact {
+        padding: 120px 0;
+
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 80px;
+        }
+
+        &__links {
+            margin-bottom: 25px;
+        }
+
+        &__form {
+            width: 600px;
+        }
+
+        &__input {
+            padding: 14px 20px;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+
+        &__button {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
 }
