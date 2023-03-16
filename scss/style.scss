@@ -595,3 +595,74 @@ body {
         }
     }
 }
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 500px;
+    }
+
+    .menu {
+
+        &__button {
+            right: calc((100vw - 500px) / 2);
+        }
+
+        &__list {
+            right: calc((100vw - 500px) / 2);
+        }
+    }
+
+    .hero {
+
+        &__title {
+            width: 100%;
+        }
+    }
+
+    .slide {
+        width: 380px;
+        flex-direction: column;
+
+        &__image {
+            width: auto;
+            height: 240px;
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            width: 100%;
+        }
+    }
+
+    .toolkit {
+
+        &__technologies {
+            flex-wrap: wrap;
+        }
+
+        &__technology {
+            margin-bottom: 40px;
+        }
+    }
+
+    .technology {
+        width: 30%;
+
+        &__image {
+            width: 70%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    }
+
+    .contact {
+
+        &__input {
+
+            &_textarea {
+                height: 200px;
+            }
+        }
+    }
+}

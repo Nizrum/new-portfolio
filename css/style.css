@@ -599,3 +599,47 @@ body {
     margin-bottom: 66px;
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    width: 500px;
+  }
+  .menu__button {
+    right: calc((100vw - 500px) / 2);
+  }
+  .menu__list {
+    right: calc((100vw - 500px) / 2);
+  }
+  .hero__title {
+    width: 100%;
+  }
+  .slide {
+    width: 380px;
+    flex-direction: column;
+  }
+  .slide__image {
+    width: auto;
+    height: 240px;
+    margin-bottom: 30px;
+  }
+  .slide__text {
+    width: 100%;
+  }
+  .toolkit__technologies {
+    flex-wrap: wrap;
+  }
+  .toolkit__technology {
+    margin-bottom: 40px;
+  }
+  .technology {
+    width: 30%;
+  }
+  .technology__image {
+    width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .contact__input_textarea {
+    height: 200px;
+  }
+}
