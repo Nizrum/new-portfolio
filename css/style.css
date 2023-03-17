@@ -90,7 +90,7 @@ body {
 }
 
 .container {
-  width: 1150px;
+  width: 1145px;
   margin: 0 auto;
 }
 
@@ -618,6 +618,7 @@ body {
   .slide {
     width: 380px;
     flex-direction: column;
+    align-items: center;
   }
   .slide__image {
     width: auto;
@@ -684,5 +685,47 @@ body {
   .contact__title {
     font-size: 36px;
     line-height: 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  .portfolio {
+    padding: 90px 0;
+  }
+  .portfolio__title {
+    margin-bottom: 50px;
+  }
+  .slider {
+    position: relative;
+  }
+  .slider__button {
+    position: absolute;
+    top: 90px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+  }
+  .slider__button_prev {
+    left: 0;
+  }
+  .slider__button_next {
+    right: 0;
+  }
+  .slider__slides {
+    width: 100%;
+  }
+  .slide__image {
+    height: 180px;
+  }
+  .toolkit {
+    padding: 90px 0;
+  }
+  .toolkit__title {
+    margin-bottom: 45px;
+  }
+  .contact {
+    padding: 90px 0;
+  }
+  .contact__title {
+    margin-bottom: 45px;
   }
 }
