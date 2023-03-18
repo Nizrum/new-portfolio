@@ -105,6 +105,7 @@ body {
 
     &__list {
         position: fixed;
+        z-index: 10;
         top: 15vh;
         right: calc((100vw - 1150px) / 2);
         background-color: #fff;
@@ -123,7 +124,7 @@ body {
     &__link {
         position: relative;
         font-size: 32px;
-        line-height: 32px;
+        line-height: 1;
         color: #222;
 
         &:after {
@@ -411,6 +412,10 @@ body {
         &__list {
             right: calc((100vw - 900px) / 2);
         }
+
+        &__link {
+            font-size: 28px;
+        }
     }
 
     .hero {
@@ -684,6 +689,10 @@ body {
 
         &__list {
             right: 5vw;
+        }
+
+        &__link {
+            font-size: 24px;
         }
     }
 
