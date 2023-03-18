@@ -16,32 +16,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/menu.js" defer></script>
 </head>
 
 <body>
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero__container container">
             <div class="hero__wrapper">
                 <div class="hero__menu menu">
                     <button class="menu__button">
-                        <svg class="menu__icon" width="56" height="45" viewBox="0 0 56 45" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 42H53M3 22.5H53M3 3H53" stroke="#49D6BC" stroke-width="6" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
+                        <div class="menu__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </button>
-                    <ul class="menu__list d-none">
+                    <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a href="#" class="menu__link">Главная</a>
+                            <a href="#hero" class="menu__link">Главная</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__link">Работы</a>
+                            <a href="#portfolio" class="menu__link">Работы</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__link">Инструментарий</a>
+                            <a href="#toolkit" class="menu__link">Инструментарий</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__link">Контакты</a>
+                            <a href="#contact" class="menu__link">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -57,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container portfolio__container">
             <div class="portfolio__wrapper">
                 <h2 class="portfolio__title">🖥 Мои работы</h2>
@@ -167,7 +169,7 @@
             </div>
         </div>
     </section>
-    <section class="toolkit">
+    <section class="toolkit" id="toolkit">
         <div class="container toolkit__container">
             <div class="toolkit__wrapper">
                 <h2 class="toolkit__title">🔧 Мой инструментарий</h2>
@@ -200,7 +202,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container contact__container">
             <div class="contact__wrapper">
                 <h2 class="contact__title">✉️ Свяжитесь со мной</h2>

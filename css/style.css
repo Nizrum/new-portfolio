@@ -172,17 +172,62 @@ body {
   outline: 2px solid #49D6BC;
 }
 
-.menu__button:hover path {
-  stroke: #3db8a2;
-}
-
 .menu__icon {
   width: 50px;
-  height: 40px;
+  height: 41px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  cursor: pointer;
 }
 
-.menu__icon path {
-  transition: all 0.2s;
+.menu__icon:hover span {
+  background: #3db8a2;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  background: #49D6BC;
+  border-radius: 7px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 17px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 34px;
+}
+
+.menu__icon.open span:nth-child(1) {
+  top: 17px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu__icon.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu__icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu__icon.open span:nth-child(4) {
+  top: 17px;
+  width: 0%;
+  left: 50%;
 }
 
 .menu__list {
@@ -193,6 +238,12 @@ body {
   background-color: #fff;
   padding: 30px 7px 30px 30px;
   border-radius: 5px;
+  transform: scaleY(0);
+  transition: all 0.25s;
+}
+
+.menu__list_active {
+  transform: scaleY(1);
 }
 
 .menu__list-item {
@@ -208,6 +259,7 @@ body {
   font-size: 32px;
   line-height: 1;
   color: #222;
+  border-radius: 5px;
 }
 
 .menu__link:after {
@@ -223,6 +275,10 @@ body {
 
 .menu__link:hover:after {
   width: 100%;
+}
+
+.menu__link:focus {
+  outline: 2px solid #49D6BC;
 }
 
 .portfolio {
@@ -459,10 +515,6 @@ body {
 
 .contact__button:hover {
   background-color: #3db8a2;
-}
-
-.d-none {
-  display: none;
 }
 
 @media (max-width: 1199px) {
