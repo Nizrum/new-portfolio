@@ -87,6 +87,7 @@ h6 {
 body {
   font-family: 'Raleway', sans-serif;
   color: #222;
+  overflow-x: hidden;
 }
 
 .container {
@@ -295,15 +296,27 @@ body {
 }
 
 .slider {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .slider__button {
+  position: absolute;
+  top: 140px;
+  transform: translateY(-50%);
   background-color: transparent;
   border-radius: 5px;
   outline-offset: 2px;
+}
+
+.slider__button_prev {
+  left: 0;
+}
+
+.slider__button_next {
+  right: 0;
 }
 
 .slider__button_next svg {
@@ -671,15 +684,20 @@ body {
   .hero__title {
     width: 100%;
   }
+  .slider__button {
+    top: 110px;
+  }
   .slide {
-    width: 380px;
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }
-  .slide__image {
-    width: auto;
-    height: 240px;
+  .slide__image-wrapper {
     margin-bottom: 30px;
+  }
+  .slide__image {
+    height: 220px;
+    width: auto;
   }
   .slide__text {
     width: 100%;
@@ -728,14 +746,12 @@ body {
     font-size: 36px;
     line-height: 40px;
   }
-  .slider__slides {
-    width: calc(100% - 100px);
-  }
-  .slide {
-    width: 100%;
+  .slider__button {
+    opacity: 0.5;
+    top: 95px;
   }
   .slide__image {
-    height: 200px;
+    height: 190px;
   }
   .toolkit__title {
     font-size: 36px;
@@ -754,26 +770,14 @@ body {
   .portfolio__title {
     margin-bottom: 50px;
   }
-  .slider {
-    position: relative;
-  }
   .slider__button {
-    position: absolute;
-    top: 90px;
-    transform: translateY(-50%);
-    opacity: 0.5;
-  }
-  .slider__button_prev {
-    left: 0;
-  }
-  .slider__button_next {
-    right: 0;
+    top: 85px;
   }
   .slider__slides {
     width: 100%;
   }
   .slide__image {
-    height: 180px;
+    height: 170px;
   }
   .toolkit {
     padding: 90px 0;

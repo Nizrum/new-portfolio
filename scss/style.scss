@@ -3,6 +3,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     color: #222;
+    overflow-x: hidden;
 }
 
 .container {
@@ -243,16 +244,25 @@ body {
 }
 
 .slider {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     &__button {
+        position: absolute;
+        top: 140px;
+        transform: translateY(-50%);
         background-color: transparent;
         border-radius: 5px;
         outline-offset: 2px;
 
+        &_prev {
+            left: 0;
+        }
+
         &_next {
+            right: 0;
 
             svg {
                 transform: rotate(180deg);
@@ -368,7 +378,6 @@ body {
         font-size: 24px;
         line-height: 28px;
         text-align: center;
-
     }
 }
 
@@ -705,15 +714,25 @@ body {
         }
     }
 
+    .slider {
+
+        &__button {
+            top: 110px;
+        }
+    }
+
     .slide {
-        width: 380px;
+        width: 100%;
         flex-direction: column;
         align-items: center;
 
-        &__image {
-            width: auto;
-            height: 240px;
+        &__image-wrapper {
             margin-bottom: 30px;
+        }
+
+        &__image {
+            height: 220px;
+            width: auto;
         }
 
         &__text {
@@ -797,16 +816,16 @@ body {
 
     .slider {
 
-        &__slides {
-            width: calc(100% - 100px);
+        &__button {
+            opacity: 0.5;
+            top: 95px;
         }
     }
 
     .slide {
-        width: 100%;
 
         &__image {
-            height: 200px;
+            height: 190px;
         }
     }
 
@@ -838,21 +857,9 @@ body {
     }
 
     .slider {
-        position: relative;
 
         &__button {
-            position: absolute;
-            top: 90px;
-            transform: translateY(-50%);
-            opacity: 0.5;
-
-            &_prev {
-                left: 0;
-            }
-
-            &_next {
-                right: 0;
-            }
+            top: 85px;
         }
 
         &__slides {
@@ -863,7 +870,7 @@ body {
     .slide {
 
         &__image {
-            height: 180px;
+            height: 170px;
         }
     }
 
