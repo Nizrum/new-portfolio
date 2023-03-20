@@ -233,11 +233,11 @@
                         </svg>
                     </a>
                 </div>
-                <form action="#" class="contact__form">
-                    <input type="text" class="contact__input" placeholder="Имя">
-                    <input type="email" class="contact__input" placeholder="Email">
+                <form  method="POST" action="telegram.php" class="contact__form">
+                    <input type="text" name="name" class="contact__input" placeholder="Имя" required>
+                    <input type="email" name="email" class="contact__input" placeholder="Email" required>
                     <textarea name="message" class="contact__input contact__input_textarea"
-                        placeholder="Сообщение"></textarea>
+                        placeholder="Сообщение" required></textarea>
                     <button class="contact__button" type="submit">Отправить</button>
                 </form>
             </div>
