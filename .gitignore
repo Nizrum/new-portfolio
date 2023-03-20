@@ -30,4 +30,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+#php
+*.php
+
 # End of https://www.toptal.com/developers/gitignore/api/osx
