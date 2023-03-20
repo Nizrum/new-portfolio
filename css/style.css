@@ -283,6 +283,7 @@ body {
 }
 
 .portfolio {
+  background-color: #effffc;
   padding: 150px 0;
 }
 
@@ -432,7 +433,7 @@ body {
 
 .contact {
   padding: 150px 0;
-  background-color: #e7fffb;
+  background-color: #effffc;
 }
 
 .contact__wrapper {

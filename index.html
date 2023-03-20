@@ -15,10 +15,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/menu.js" defer></script>
     <script src="js/smoothScroll.js" defer></script>
     <script src="js/slider.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -26,7 +28,7 @@
         <div class="hero__container container">
             <div class="hero__wrapper">
                 <div class="hero__menu menu">
-                    <button class="menu__button">
+                    <button class="menu__button" data-aos="fade-left">
                         <div class="menu__icon">
                             <span></span>
                             <span></span>
@@ -49,11 +51,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="hero__image-wrapper">
+                <div class="hero__image-wrapper" data-aos="fade-down">
                     <img src="images/avatar-m.png" alt="аватар" class="hero__image">
                 </div>
-                <p class="hero__greeting">Привет!<br>Я — Семён.</p>
-                <h1 class="hero__title">
+                <p class="hero__greeting" data-aos="fade-up">Привет!<br>Я — Семён.</p>
+                <h1 class="hero__title" data-aos="fade-up">
                     <span>Фронтенд-разработчик</span> и (иногда) дизайнер с
                     желанием работать над интересными и полезными проектами.
                 </h1>
@@ -61,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio" data-aos="fade-up">
         <div class="container portfolio__container">
             <div class="portfolio__wrapper">
                 <h2 class="portfolio__title">🖥 Мои работы</h2>
@@ -171,7 +173,7 @@
             </div>
         </div>
     </section>
-    <section class="toolkit" id="toolkit">
+    <section class="toolkit" id="toolkit" data-aos="fade-up">
         <div class="container toolkit__container">
             <div class="toolkit__wrapper">
                 <h2 class="toolkit__title">🔧 Мой инструментарий</h2>
@@ -204,7 +206,7 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-up">
         <div class="container contact__container">
             <div class="contact__wrapper">
                 <h2 class="contact__title">✉️ Свяжитесь со мной</h2>
@@ -242,6 +244,7 @@
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@2.3.3"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
