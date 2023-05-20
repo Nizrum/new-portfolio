@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Портфолио фронтенд разработчика, где веб-разработчик рассказывает о своих проектах и навыках">
     <title>Портфолио</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -28,7 +30,7 @@
         <div class="hero__container container">
             <div class="hero__wrapper">
                 <div class="hero__menu menu">
-                    <button class="menu__button" data-aos="fade-left">
+                    <button class="menu__button" data-aos="fade-left" aria-label="Открыть меню">
                         <div class="menu__icon">
                             <span></span>
                             <span></span>
@@ -68,7 +70,7 @@
             <div class="portfolio__wrapper">
                 <h2 class="portfolio__title">🖥 Мои работы</h2>
                 <div class="portfolio__slider slider">
-                    <button class="slider__button slider__button_prev">
+                    <button class="slider__button slider__button_prev" aria-label="Открыть предыдущую работу">
                         <svg width="50" viewBox="0 0 50 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M48.2679 1.72439C49.4226 2.87399 50 4.23513 50 5.80779C50 7.37737 49.4226 8.73697 48.2679 9.88657L14.4342 43.57L48.3834 77.3683C49.4611 78.4413 50 79.7825 50 81.3919C50 83.0013 49.4226 84.3809 48.2679 85.5305C47.1132 86.6801 45.746 87.2549 44.1663 87.2549C42.5897 87.2549 41.224 86.6801 40.0693 85.5305L1.27021 46.7888C0.808315 46.329 0.480373 45.8308 0.286377 45.2944C0.0954627 44.7579 3.76546e-06 44.1831 3.81906e-06 43.5699C3.87266e-06 42.9568 0.0954629 42.382 0.286377 41.8455C0.480374 41.3091 0.808316 40.8109 1.27021 40.3511L40.1848 1.60943C41.2625 0.536468 42.5897 -1.59066e-05 44.1663 -1.57688e-05C45.746 -1.56307e-05 47.1132 0.574791 48.2679 1.72439Z"
@@ -162,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="slider__button slider__button_next">
+                    <button class="slider__button slider__button_next" aria-label="Открыть следующую работу">
                         <svg width="50" viewBox="0 0 50 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M48.2679 1.72439C49.4226 2.87399 50 4.23513 50 5.80779C50 7.37737 49.4226 8.73697 48.2679 9.88657L14.4342 43.57L48.3834 77.3683C49.4611 78.4413 50 79.7825 50 81.3919C50 83.0013 49.4226 84.3809 48.2679 85.5305C47.1132 86.6801 45.746 87.2549 44.1663 87.2549C42.5897 87.2549 41.224 86.6801 40.0693 85.5305L1.27021 46.7888C0.808315 46.329 0.480373 45.8308 0.286377 45.2944C0.0954627 44.7579 3.76546e-06 44.1831 3.81906e-06 43.5699C3.87266e-06 42.9568 0.0954629 42.382 0.286377 41.8455C0.480374 41.3091 0.808316 40.8109 1.27021 40.3511L40.1848 1.60943C41.2625 0.536468 42.5897 -1.59066e-05 44.1663 -1.57688e-05C45.746 -1.56307e-05 47.1132 0.574791 48.2679 1.72439Z"
@@ -211,7 +213,8 @@
             <div class="contact__wrapper">
                 <h2 class="contact__title">✉️ Свяжитесь со мной</h2>
                 <div class="contact__links">
-                    <a href="https://t.me/nizrum" class="contact__link" target="_blank">
+                    <a href="https://t.me/nizrum" class="contact__link" target="_blank"
+                        aria-label="Написать мне в телеграме">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_6_55)">
                                 <path
@@ -225,7 +228,8 @@
                             </defs>
                         </svg>
                     </a>
-                    <a href="https://github.com/Nizrum" class="contact__link" target="_blank">
+                    <a href="https://github.com/Nizrum" class="contact__link" target="_blank"
+                        aria-label="Открыть мою страницу на GitHub">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M25 0C11.1875 0 0 11.1875 0 25C0 36.0625 7.15625 45.4062 17.0938 48.7188C18.3438 48.9375 18.8125 48.1875 18.8125 47.5312C18.8125 46.9375 18.7812 44.9688 18.7812 42.875C12.5 44.0312 10.875 41.3438 10.375 39.9375C10.0938 39.2188 8.875 37 7.8125 36.4062C6.9375 35.9375 5.6875 34.7812 7.78125 34.75C9.75 34.7188 11.1562 36.5625 11.625 37.3125C13.875 41.0938 17.4688 40.0312 18.9062 39.375C19.125 37.75 19.7812 36.6562 20.5 36.0312C14.9375 35.4062 9.125 33.25 9.125 23.6875C9.125 20.9688 10.0938 18.7188 11.6875 16.9688C11.4375 16.3438 10.5625 13.7812 11.9375 10.3438C11.9375 10.3438 14.0312 9.6875 18.8125 12.9062C20.8125 12.3438 22.9375 12.0625 25.0625 12.0625C27.1875 12.0625 29.3125 12.3438 31.3125 12.9062C36.0938 9.65625 38.1875 10.3438 38.1875 10.3438C39.5625 13.7812 38.6875 16.3438 38.4375 16.9688C40.0312 18.7188 41 20.9375 41 23.6875C41 33.2812 35.1562 35.4062 29.5938 36.0312C30.5 36.8125 31.2812 38.3125 31.2812 40.6562C31.2812 44 31.25 46.6875 31.25 47.5312C31.25 48.1875 31.7188 48.9688 32.9688 48.7188C37.932 47.0437 42.2448 43.8542 45.3001 39.5992C48.3553 35.3443 49.9991 30.2382 50 25C50 11.1875 38.8125 0 25 0Z"
@@ -233,12 +237,12 @@
                         </svg>
                     </a>
                 </div>
-                <form  method="POST" action="telegram.php" class="contact__form">
-                    <input type="text" name="name" class="contact__input" placeholder="Имя" required>
-                    <input type="email" name="email" class="contact__input" placeholder="Email" required>
-                    <textarea name="message" class="contact__input contact__input_textarea"
-                        placeholder="Сообщение" required></textarea>
-                    <button class="contact__button" type="submit">Отправить</button>
+                <form method="POST" action="telegram.php" class="contact__form">
+                    <input type="text" aria-label="Введите имя" name="name" class="contact__input" placeholder="Имя" required>
+                    <input type="email" aria-label="Введите email" name="email" class="contact__input" placeholder="Email" required>
+                    <textarea name="message" aria-label="Введите сообщение" class="contact__input contact__input_textarea" placeholder="Сообщение"
+                        required></textarea>
+                    <button class="contact__button" type="submit" aria-label="Отправить сообщение">Отправить</button>
                 </form>
             </div>
         </div>
